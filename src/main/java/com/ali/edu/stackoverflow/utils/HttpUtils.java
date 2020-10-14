@@ -75,7 +75,7 @@ public class HttpUtils {
      * @param deviceAddParam
      * @return
      */
-    public String postAddDevice(String url, DeviceAddParam deviceAddParam) {
+    public Boolean postAddDevice(String url, DeviceAddParam deviceAddParam) {
         CloseableHttpClient httpClient = HttpClients.custom().setConnectionManager(phccm).build();
         HttpPost httpPost = new HttpPost(url);
         httpPost.setConfig(requestConfig);
@@ -98,7 +98,7 @@ public class HttpUtils {
             if (response.getStatusLine().getStatusCode() == 200){
                 HttpEntity entity = response.getEntity();
                 String responseMessage = EntityUtils.toString(entity, "utf8");
-                logger.info("添加Device的返回信息 " + responseMessage);
+                return responseMessage.contains("true");
             }
         } catch (Exception e) {
             try {
@@ -109,11 +109,11 @@ public class HttpUtils {
                 ioException.printStackTrace();
             }
         }
-        return "sucess";
+        return false;
     }
 
 
-    public String postAddManufacture(String url, Manufacturer manufacturer) {
+    public Boolean postAddManufacture(String url, Manufacturer manufacturer) {
         CloseableHttpClient httpClient = HttpClients.custom().setConnectionManager(phccm).build();
         HttpPost httpPost = new HttpPost(url);
         httpPost.setConfig(requestConfig);
@@ -136,7 +136,8 @@ public class HttpUtils {
             if (response.getStatusLine().getStatusCode() == 200){
                 HttpEntity entity = response.getEntity();
                 String responseMessage = EntityUtils.toString(entity, "utf8");
-                logger.info("添加Device的返回信息 " + responseMessage);
+                return responseMessage.contains("true");
+
             }
         } catch (Exception e) {
             try {
@@ -147,7 +148,7 @@ public class HttpUtils {
                 ioException.printStackTrace();
             }
         }
-        return "sucess";
+        return false;
     }
 
 

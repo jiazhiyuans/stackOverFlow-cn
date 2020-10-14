@@ -1,51 +1,114 @@
-09:45:17 [restartedMain] DEBUG o.s.b.c.l.ClasspathLoggingApplicationListener - Application started with classpath: [file:/E:/1学习/stackoverflow-cn/target/classes/, file:/D:/maven/repo/tk/mybatis/mapper-spring-boot-starter/1.1.4/mapper-spring-boot-starter-1.1.4.jar, file:/D:/maven/repo/tk/mybatis/mapper-spring-boot-autoconfigure/1.1.4/mapper-spring-boot-autoconfigure-1.1.4.jar, file:/D:/maven/repo/tk/mybatis/mapper/3.4.3/mapper-3.4.3.jar]
-09:45:17 [background-preinit] DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000252: Using org.hibernate.validator.internal.engine.DefaultPropertyNodeNameProvider as property node name provider.
-09:45:17 [background-preinit] DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
-09:45:17 [background-preinit] DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
-09:45:17 [background-preinit] DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
-09:45:17 [background-preinit] DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
-09:45:17 [background-preinit] DEBUG o.h.v.i.e.ValidatorFactoryConfigurationHelper - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
-09:45:18 [restartedMain] INFO  c.a.e.s.StackOverFlowMain - Starting StackOverFlowMain on DESKTOP-MFO9BQR with PID 5292 (E:\1学习\stackoverflow-cn\target\classes started by rocky in E:\1学习\stackoverflow-cn)
-09:45:18 [restartedMain] DEBUG c.a.e.s.StackOverFlowMain - Running with Spring Boot v2.3.0.RELEASE, Spring v5.2.6.RELEASE
-09:45:18 [restartedMain] INFO  c.a.e.s.StackOverFlowMain - No active profile set, falling back to default profiles: default
-09:45:18 [restartedMain] DEBUG o.s.boot.SpringApplication - Loading source class com.ali.edu.stackoverflow.StackOverFlowMain
-09:45:18 [restartedMain] DEBUG o.s.b.c.c.ConfigFileApplicationListener - Loaded config file 'file:/E:/1%e5%ad%a6%e4%b9%a0/stackoverflow-cn/target/classes/application.yml' (classpath:/application.yml)
-09:45:18 [restartedMain] DEBUG o.s.b.d.restart.ChangeableUrls - Matching URLs for reloading : [file:/E:/1学习/stackoverflow-cn/target/classes/, file:/D:/maven/repo/tk/mybatis/mapper-spring-boot-starter/1.1.4/mapper-spring-boot-starter-1.1.4.jar, file:/D:/maven/repo/tk/mybatis/mapper-spring-boot-autoconfigure/1.1.4/mapper-spring-boot-autoconfigure-1.1.4.jar, file:/D:/maven/repo/tk/mybatis/mapper/3.4.3/mapper-3.4.3.jar]
-09:45:18 [restartedMain] DEBUG o.s.b.d.s.DevToolsSettings - Included patterns for restart : [/mapper-[\w-\.]+jar]
-09:45:18 [restartedMain] DEBUG o.s.b.d.s.DevToolsSettings - Excluded patterns for restart : [/spring-boot-starter-[\w-]+/, /spring-boot/(bin|build|out)/, /spring-boot-starter/(bin|build|out)/, /spring-boot-devtools/(bin|build|out)/, /spring-boot-actuator/(bin|build|out)/, /spring-boot-autoconfigure/(bin|build|out)/]
-09:45:18 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-09:45:18 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-09:45:18 [restartedMain] DEBUG o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@33a92da4
-09:45:18 [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
-09:45:18 [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory'
-09:45:18 [restartedMain] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [E:\1学习\stackoverflow-cn\target\classes\com\ali\edu\stackoverflow\controller\PostController.class]
-09:45:18 [restartedMain] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [E:\1学习\stackoverflow-cn\target\classes\com\ali\edu\stackoverflow\crawler\ScheduledSendEmail.class]
-09:45:18 [restartedMain] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [E:\1学习\stackoverflow-cn\target\classes\com\ali\edu\stackoverflow\event\EventConsumer.class]
-09:45:18 [restartedMain] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [E:\1学习\stackoverflow-cn\target\classes\com\ali\edu\stackoverflow\event\EventProducer.class]
-09:45:19 [restartedMain] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [E:\1学习\stackoverflow-cn\target\classes\com\ali\edu\stackoverflow\exception\GlobeExceptionHandler.class]
-09:45:19 [restartedMain] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [E:\1学习\stackoverflow-cn\target\classes\com\ali\edu\stackoverflow\service\JdItemServiceImpl.class]
-09:45:19 [restartedMain] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [E:\1学习\stackoverflow-cn\target\classes\com\ali\edu\stackoverflow\utils\HttpUtils.class]
-09:45:19 [restartedMain] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Found key 'spring.template.provider.cache' in PropertySource 'configurationProperties' with value of type String
-09:45:19 [restartedMain] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Found key 'spring.jmx.enabled' in PropertySource 'configurationProperties' with value of type String
-09:45:19 [restartedMain] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Found key 'spring.datasource.url' in PropertySource 'configurationProperties' with value of type String
-09:45:19 [restartedMain] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Found key 'spring.jmx.enabled' in PropertySource 'configurationProperties' with value of type String
-09:45:19 [restartedMain] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Found key 'spring.application.admin.enabled' in PropertySource 'configurationProperties' with value of type String
-09:45:20 [restartedMain] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Found key 'spring.template.provider.cache' in PropertySource 'configurationProperties' with value of type String
-09:45:20 [restartedMain] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Found key 'spring.jmx.enabled' in PropertySource 'configurationProperties' with value of type String
-09:45:20 [restartedMain] DEBUG o.m.s.b.a.MybatisAutoConfiguration - Searching for mappers annotated with @Mapper
-09:45:20 [restartedMain] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.AutoConfigurationPackages'
-09:45:20 [restartedMain] DEBUG o.s.b.a.AutoConfigurationPackages - @EnableAutoConfiguration was declared on a class in the package 'com.ali.edu.stackoverflow'. Automatic @Repository and @Entity scanning is enabled.
-09:45:20 [restartedMain] DEBUG o.m.s.b.a.MybatisAutoConfiguration - Using auto-configuration base package 'com.ali.edu.stackoverflow'
-09:45:20 [restartedMain] DEBUG o.m.s.m.ClassPathMapperScanner - Identified candidate component class: file [E:\1学习\stackoverflow-cn\target\classes\com\ali\edu\stackoverflow\dao\JdItemDao.class]
-09:45:20 [restartedMain] DEBUG o.m.s.m.ClassPathMapperScanner - Creating MapperFactoryBean with name 'jdItemDao' and 'com.ali.edu.stackoverflow.dao.JdItemDao' mapperInterface
-09:45:20 [restartedMain] DEBUG o.m.s.m.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'jdItemDao'.
-09:45:20 [restartedMain] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Found key 'spring.jmx.enabled' in PropertySource 'configurationProperties' with value of type String
-09:45:20 [restartedMain] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Found key 'spring.application.admin.enabled' in PropertySource 'configurationProperties' with value of type String
-09:45:20 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
-09:45:20 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
-09:45:20 [restartedMain] DEBUG o.s.d.r.c.RepositoryConfigurationDelegate - Scanning for MongoDB repositories in packages com.ali.edu.stackoverflow.
-09:45:20 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15ms. Found 0 MongoDB repository interfaces.
-09:45:21 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
-09:45:21 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-09:45:21 [restartedMain] DEBUG o.s.d.r.c.RepositoryConfigurationDelegate - Scanning for Redis repositories in packages com.ali.edu.stackoverflow.
-09:45:21 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5ms. Found 0 Redis repository interfaces.
+12:17:30 [main] DEBUG o.a.h.c.p.RequestAddCookies - CookieSpec selected: default
+12:17:30 [main] DEBUG o.a.h.c.p.RequestAuthCache - Auth cache not set in the context
+12:17:30 [main] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection request: [route: {}->http://hangzhou-test.fpi-inc.site:80][total available: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+12:17:30 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "end of stream"
+12:17:30 [main] DEBUG o.a.h.i.c.DefaultManagedHttpClientConnection - http-outgoing-0: Close connection
+12:17:30 [main] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection leased: [id: 1][route: {}->http://hangzhou-test.fpi-inc.site:80][total available: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+12:17:30 [main] DEBUG o.a.h.i.execchain.MainClientExec - Opening connection {}->http://hangzhou-test.fpi-inc.site:80
+12:17:30 [main] DEBUG o.a.h.i.c.DefaultHttpClientConnectionOperator - Connecting to hangzhou-test.fpi-inc.site/118.178.150.178:80
+12:17:30 [main] DEBUG o.a.h.i.c.DefaultHttpClientConnectionOperator - Connection established 10.191.20.184:1477<->118.178.150.178:80
+12:17:30 [main] DEBUG o.a.h.i.c.DefaultManagedHttpClientConnection - http-outgoing-1: set socket timeout to 10000
+12:17:30 [main] DEBUG o.a.h.i.execchain.MainClientExec - Executing request POST /bmp-device-manage-server/api/v1/device/add-device HTTP/1.1
+12:17:30 [main] DEBUG o.a.h.i.execchain.MainClientExec - Target auth state: UNCHALLENGED
+12:17:30 [main] DEBUG o.a.h.i.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+12:17:30 [main] DEBUG org.apache.http.headers - http-outgoing-1 >> POST /bmp-device-manage-server/api/v1/device/add-device HTTP/1.1
+12:17:30 [main] DEBUG org.apache.http.headers - http-outgoing-1 >> Content-Length: 681
+12:17:30 [main] DEBUG org.apache.http.headers - http-outgoing-1 >> Content-Type: application/json
+12:17:30 [main] DEBUG org.apache.http.headers - http-outgoing-1 >> Host: hangzhou-test.fpi-inc.site
+12:17:30 [main] DEBUG org.apache.http.headers - http-outgoing-1 >> Connection: Keep-Alive
+12:17:30 [main] DEBUG org.apache.http.headers - http-outgoing-1 >> User-Agent: Apache-HttpClient/4.5.12 (Java/12)
+12:17:30 [main] DEBUG org.apache.http.headers - http-outgoing-1 >> Accept-Encoding: gzip,deflate
+12:17:30 [main] DEBUG org.apache.http.wire - http-outgoing-1 >> "POST /bmp-device-manage-server/api/v1/device/add-device HTTP/1.1[\r][\n]"
+12:17:30 [main] DEBUG org.apache.http.wire - http-outgoing-1 >> "Content-Length: 681[\r][\n]"
+12:17:30 [main] DEBUG org.apache.http.wire - http-outgoing-1 >> "Content-Type: application/json[\r][\n]"
+12:17:30 [main] DEBUG org.apache.http.wire - http-outgoing-1 >> "Host: hangzhou-test.fpi-inc.site[\r][\n]"
+12:17:30 [main] DEBUG org.apache.http.wire - http-outgoing-1 >> "Connection: Keep-Alive[\r][\n]"
+12:17:30 [main] DEBUG org.apache.http.wire - http-outgoing-1 >> "User-Agent: Apache-HttpClient/4.5.12 (Java/12)[\r][\n]"
+12:17:30 [main] DEBUG org.apache.http.wire - http-outgoing-1 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+12:17:30 [main] DEBUG org.apache.http.wire - http-outgoing-1 >> "[\r][\n]"
+12:17:30 [main] DEBUG org.apache.http.wire - http-outgoing-1 >> "{"basicAttrVoMap":{"deviceName":{"basicAttrValue":"[0xe5][0xb8][0xb8][0xe8][0xa7][0x84][0xe4][0xba][0x94][0xe5][0x8f][0x82][0xe6][0x95][0xb0][0xe5][0x88][0x86][0xe6][0x9e][0x90][0xe4][0xbb][0xaa]"}},"deviceCommonNameAttrs":{"deviceCode":"[0xe5][0xb8][0xb8][0xe8][0xa7][0x84][0xe4][0xba][0x94][0xe5][0x8f][0x82][0xe6][0x95][0xb0][0xe6][0xb0][0xb4][0xe8][0xb4][0xa8][0xe8][0x87][0xaa][0xe5][0x8a][0xa8][0xe5][0x88][0x86][0xe6][0x9e][0x90][0xe4][0xbb][0xaa][0xef][0xbc][0x88][0xe6][0xb5][0x8a][0xe5][0xba][0xa6][0xef][0xbc][0x89]","deviceTypeName":"[0xe6][0xb0][0xb4]","manufacturerName":"[0xe5][0x9b][0x9b][0xe5][0xb7][0x9d][0xe4][0xb9][0x85][0xe7][0x8e][0xaf][0xe7][0x8e][0xaf][0xe5][0xa2][0x83][0xe6][0x8a][0x80][0xe6][0x9c][0xaf][0xe6][0x9c][0x89][0xe9][0x99][0x90][0xe8][0xb4][0xa3][0xe4][0xbb][0xbb][0xe5][0x85][0xac][0xe5][0x8f][0xb8]"},"extendAttrVoMap":{"reagent":{"extendAttrValuesMapList":[{"reagentname":{"subAttrValue":"[0xe6][0xa0][0x87][0xe5][0x87][0x86][0xe6][0xba][0xb6][0xe6][0xb6][0xb2]"}}]},"factor":{"extendAttrValuesMapList":[{"detectionType":{"subAttrValue":"[0xe5][0xb8][0xb8][0xe8][0xa7][0x84][0xe7][0x9b][0x91][0xe6][0xb5][0x8b][0xe9][0xa1][0xb9]"},"unit":{"subAttrValue":"NTU"},"factorCode":{"subAttrValue":"w01003"},"analysisMethod":{"subAttrValue":"90[0xe5][0xba][0xa6][0xe6][0x95][0xa3][0xe5][0xb0][0x84][0xe6][0xb3][0x95]"},"highLimit":{"subAttrValue":"/"},"lowerLimit":{"subAttrValue":"/"},"detectionLimit":{"subAttrValue":"/"}}]}}}"
+12:17:30 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "HTTP/1.1 200 [\r][\n]"
+12:17:30 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "Server: nginx/1.15.8[\r][\n]"
+12:17:30 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "Date: Wed, 14 Oct 2020 12:17:29 GMT[\r][\n]"
+12:17:30 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+12:17:30 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "Transfer-Encoding: chunked[\r][\n]"
+12:17:30 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "Connection: keep-alive[\r][\n]"
+12:17:30 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "Vary: Accept-Encoding[\r][\n]"
+12:17:30 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "Set-Cookie: rememberMe=deleteMe; Path=/bmp-device-manage-server; Max-Age=0; Expires=Tue, 13-Oct-2020 12:17:29 GMT[\r][\n]"
+12:17:30 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "Content-Encoding: gzip[\r][\n]"
+12:17:30 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "[\r][\n]"
+12:17:30 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "72[\r][\n]"
+12:17:30 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0xaa]V*J-,M-.[0xf1]LQ[0xb2][0xca]+[0xcd][0xc9][0xd1]Q*.MNN-.V[0xb2]JK[0xcc])N[0xd5]QJ[0xce]OIU[0xb2]RJI,I[0x8c]O[0xcc])JML[0xa9][0x8c]O[0xad][0xc8],.[0x89]O-*[0xca]/R[0xd2]Q[0xca][0x5]*OL[0x7])z6u[0xc3][0xb3][0xde]uO[0xb7]oz[0xbe][0xbb][0xff][0xe9][0xda][0x19]O[0xe7][0xac]P[0xaa][0x5][0x0][0x0][0x0][0xff][0xff][\r][\n]"
+12:17:30 [main] DEBUG org.apache.http.headers - http-outgoing-1 << HTTP/1.1 200 
+12:17:30 [main] DEBUG org.apache.http.headers - http-outgoing-1 << Server: nginx/1.15.8
+12:17:30 [main] DEBUG org.apache.http.headers - http-outgoing-1 << Date: Wed, 14 Oct 2020 12:17:29 GMT
+12:17:30 [main] DEBUG org.apache.http.headers - http-outgoing-1 << Content-Type: application/json;charset=UTF-8
+12:17:30 [main] DEBUG org.apache.http.headers - http-outgoing-1 << Transfer-Encoding: chunked
+12:17:30 [main] DEBUG org.apache.http.headers - http-outgoing-1 << Connection: keep-alive
+12:17:30 [main] DEBUG org.apache.http.headers - http-outgoing-1 << Vary: Accept-Encoding
+12:17:30 [main] DEBUG org.apache.http.headers - http-outgoing-1 << Set-Cookie: rememberMe=deleteMe; Path=/bmp-device-manage-server; Max-Age=0; Expires=Tue, 13-Oct-2020 12:17:29 GMT
+12:17:30 [main] DEBUG org.apache.http.headers - http-outgoing-1 << Content-Encoding: gzip
+12:17:30 [main] DEBUG o.a.h.i.execchain.MainClientExec - Connection can be kept alive indefinitely
+12:17:30 [main] DEBUG o.a.h.c.p.ResponseProcessCookies - Cookie accepted [rememberMe="deleteMe", version:0, domain:hangzhou-test.fpi-inc.site, path:/bmp-device-manage-server, expiry:Tue Oct 13 20:17:29 CST 2020]
+12:17:30 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "a[\r][\n]"
+12:17:30 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "[0x3][0x0]q[0xdd][0x88][0x5]c[0x0][0x0][0x0][\r][\n]"
+12:17:30 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "0[\r][\n]"
+12:17:30 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "[\r][\n]"
+12:17:30 [main] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection [id: 1][route: {}->http://hangzhou-test.fpi-inc.site:80] can be kept alive indefinitely
+12:17:30 [main] DEBUG o.a.h.i.c.DefaultManagedHttpClientConnection - http-outgoing-1: set socket timeout to 0
+12:17:30 [main] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection released: [id: 1][route: {}->http://hangzhou-test.fpi-inc.site:80][total available: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+12:17:30 [main] DEBUG o.a.h.c.p.RequestAddCookies - CookieSpec selected: default
+12:17:30 [main] DEBUG o.a.h.c.p.RequestAuthCache - Auth cache not set in the context
+12:17:30 [main] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection request: [route: {}->http://hangzhou-test.fpi-inc.site:80][total available: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+12:17:30 [main] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection leased: [id: 1][route: {}->http://hangzhou-test.fpi-inc.site:80][total available: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+12:17:30 [main] DEBUG o.a.h.i.c.DefaultManagedHttpClientConnection - http-outgoing-1: set socket timeout to 0
+12:17:30 [main] DEBUG o.a.h.i.c.DefaultManagedHttpClientConnection - http-outgoing-1: set socket timeout to 10000
+12:17:30 [main] DEBUG o.a.h.i.execchain.MainClientExec - Executing request POST /bmp-device-manage-server/api/v1/device/add-device HTTP/1.1
+12:17:30 [main] DEBUG o.a.h.i.execchain.MainClientExec - Target auth state: UNCHALLENGED
+12:17:30 [main] DEBUG o.a.h.i.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+12:17:30 [main] DEBUG org.apache.http.headers - http-outgoing-1 >> POST /bmp-device-manage-server/api/v1/device/add-device HTTP/1.1
+12:17:30 [main] DEBUG org.apache.http.headers - http-outgoing-1 >> Content-Length: 671
+12:17:30 [main] DEBUG org.apache.http.headers - http-outgoing-1 >> Content-Type: application/json
+12:17:30 [main] DEBUG org.apache.http.headers - http-outgoing-1 >> Host: hangzhou-test.fpi-inc.site
+12:17:30 [main] DEBUG org.apache.http.headers - http-outgoing-1 >> Connection: Keep-Alive
+12:17:30 [main] DEBUG org.apache.http.headers - http-outgoing-1 >> User-Agent: Apache-HttpClient/4.5.12 (Java/12)
+12:17:30 [main] DEBUG org.apache.http.headers - http-outgoing-1 >> Accept-Encoding: gzip,deflate
+12:17:30 [main] DEBUG org.apache.http.wire - http-outgoing-1 >> "POST /bmp-device-manage-server/api/v1/device/add-device HTTP/1.1[\r][\n]"
+12:17:30 [main] DEBUG org.apache.http.wire - http-outgoing-1 >> "Content-Length: 671[\r][\n]"
+12:17:30 [main] DEBUG org.apache.http.wire - http-outgoing-1 >> "Content-Type: application/json[\r][\n]"
+12:17:30 [main] DEBUG org.apache.http.wire - http-outgoing-1 >> "Host: hangzhou-test.fpi-inc.site[\r][\n]"
+12:17:30 [main] DEBUG org.apache.http.wire - http-outgoing-1 >> "Connection: Keep-Alive[\r][\n]"
+12:17:30 [main] DEBUG org.apache.http.wire - http-outgoing-1 >> "User-Agent: Apache-HttpClient/4.5.12 (Java/12)[\r][\n]"
+12:17:30 [main] DEBUG org.apache.http.wire - http-outgoing-1 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+12:17:30 [main] DEBUG org.apache.http.wire - http-outgoing-1 >> "[\r][\n]"
+12:17:30 [main] DEBUG org.apache.http.wire - http-outgoing-1 >> "{"basicAttrVoMap":{"deviceName":{"basicAttrValue":"[0xe5][0xb8][0xb8][0xe8][0xa7][0x84][0xe4][0xba][0x94][0xe5][0x8f][0x82][0xe6][0x95][0xb0][0xe5][0x88][0x86][0xe6][0x9e][0x90][0xe4][0xbb][0xaa]"}},"deviceCommonNameAttrs":{"deviceCode":"[0xe5][0xb8][0xb8][0xe8][0xa7][0x84][0xe4][0xba][0x94][0xe5][0x8f][0x82][0xe6][0x95][0xb0][0xe6][0xb0][0xb4][0xe8][0xb4][0xa8][0xe8][0x87][0xaa][0xe5][0x8a][0xa8][0xe5][0x88][0x86][0xe6][0x9e][0x90][0xe4][0xbb][0xaa][0xef][0xbc][0x88][0xe7][0x94][0xb5][0xe5][0xaf][0xbc][0xe7][0x8e][0x87][0xef][0xbc][0x89]","deviceTypeName":"[0xe6][0xb0][0xb4]","manufacturerName":"[0xe5][0x9b][0x9b][0xe5][0xb7][0x9d][0xe4][0xb9][0x85][0xe7][0x8e][0xaf][0xe7][0x8e][0xaf][0xe5][0xa2][0x83][0xe6][0x8a][0x80][0xe6][0x9c][0xaf][0xe6][0x9c][0x89][0xe9][0x99][0x90][0xe8][0xb4][0xa3][0xe4][0xbb][0xbb][0xe5][0x85][0xac][0xe5][0x8f][0xb8]"},"extendAttrVoMap":{"reagent":{"extendAttrValuesMapList":[{"reagentname":{"subAttrValue":"/"}}]},"factor":{"extendAttrValuesMapList":[{"detectionType":{"subAttrValue":"[0xe5][0xb8][0xb8][0xe8][0xa7][0x84][0xe7][0x9b][0x91][0xe6][0xb5][0x8b][0xe9][0xa1][0xb9]"},"unit":{"subAttrValue":"[0xce][0xbc]S/cm"},"factorCode":{"subAttrValue":"w01014"},"analysisMethod":{"subAttrValue":"[0xe7][0x94][0xb5][0xe6][0x9e][0x81][0xe6][0xb3][0x95]"},"highLimit":{"subAttrValue":"/"},"lowerLimit":{"subAttrValue":"/"},"detectionLimit":{"subAttrValue":"/"}}]}}}"
+12:17:30 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "HTTP/1.1 200 [\r][\n]"
+12:17:30 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "Server: nginx/1.15.8[\r][\n]"
+12:17:30 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "Date: Wed, 14 Oct 2020 12:17:29 GMT[\r][\n]"
+12:17:30 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+12:17:30 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "Transfer-Encoding: chunked[\r][\n]"
+12:17:30 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "Connection: keep-alive[\r][\n]"
+12:17:30 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "Vary: Accept-Encoding[\r][\n]"
+12:17:30 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "Set-Cookie: rememberMe=deleteMe; Path=/bmp-device-manage-server; Max-Age=0; Expires=Tue, 13-Oct-2020 12:17:29 GMT[\r][\n]"
+12:17:30 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "Content-Encoding: gzip[\r][\n]"
+12:17:30 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "[\r][\n]"
+12:17:30 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "72[\r][\n]"
+12:17:30 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0xaa]V*J-,M-.[0xf1]LQ[0xb2][0xca]+[0xcd][0xc9][0xd1]Q*.MNN-.V[0xb2]JK[0xcc])N[0xd5]QJ[0xce]OIU[0xb2]RJI,I[0x8c]O[0xcc])JML[0xa9][0x8c]O[0xad][0xc8],.[0x89]O-*[0xca]/R[0xd2]Q[0xca][0x5]*OL[0x7])z6u[0xc3][0xb3][0xde]uO[0xb7]oz[0xbe][0xbb][0xff][0xe9][0xda][0x19]O[0xe7][0xac]P[0xaa][0x5][0x0][0x0][0x0][0xff][0xff][\r][\n]"
+12:17:30 [main] DEBUG org.apache.http.headers - http-outgoing-1 << HTTP/1.1 200 
+12:17:30 [main] DEBUG org.apache.http.headers - http-outgoing-1 << Server: nginx/1.15.8
+12:17:30 [main] DEBUG org.apache.http.headers - http-outgoing-1 << Date: Wed, 14 Oct 2020 12:17:29 GMT
+12:17:30 [main] DEBUG org.apache.http.headers - http-outgoing-1 << Content-Type: application/json;charset=UTF-8
+12:17:30 [main] DEBUG org.apache.http.headers - http-outgoing-1 << Transfer-Encoding: chunked
+12:17:30 [main] DEBUG org.apache.http.headers - http-outgoing-1 << Connection: keep-alive
+12:17:30 [main] DEBUG org.apache.http.headers - http-outgoing-1 << Vary: Accept-Encoding
+12:17:30 [main] DEBUG org.apache.http.headers - http-outgoing-1 << Set-Cookie: rememberMe=deleteMe; Path=/bmp-device-manage-server; Max-Age=0; Expires=Tue, 13-Oct-2020 12:17:29 GMT
+12:17:30 [main] DEBUG org.apache.http.headers - http-outgoing-1 << Content-Encoding: gzip
+12:17:30 [main] DEBUG o.a.h.i.execchain.MainClientExec - Connection can be kept alive indefinitely
+12:17:30 [main] DEBUG o.a.h.c.p.ResponseProcessCookies - Cookie accepted [rememberMe="deleteMe", version:0, domain:hangzhou-test.fpi-inc.site, path:/bmp-device-manage-server, expiry:Tue Oct 13 20:17:29 CST 2020]
+12:17:30 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "a[\r][\n]"
+12:17:30 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "[0x3][0x0]q[0xdd][0x88][0x5]c[0x0][0x0][0x0][\r][\n]"
+12:17:30 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "0[\r][\n]"
+12:17:30 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "[\r][\n]"
+12:17:30 [main] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection [id: 1][route: {}->http://hangzhou-test.fpi-inc.site:80] can be kept alive indefinitely
+12:17:30 [main] DEBUG o.a.h.i.c.DefaultManagedHttpClientConnection - http-outgoing-1: set socket timeout to 0
+12:17:30 [main] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection released: [id: 1][route: {}->http://hangzhou-test.fpi-inc.site:80][total available: 1; route allocated: 1 of 2; total allocated: 1 of 20]

@@ -1,0 +1,199 @@
+12:46:32 [main] DEBUG o.a.h.c.p.RequestAddCookies - CookieSpec selected: default
+12:46:32 [main] DEBUG o.a.h.c.p.RequestAuthCache - Auth cache not set in the context
+12:46:32 [main] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection request: [route: {}->http://hangzhou-test.fpi-inc.site:80][total available: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+12:46:32 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "end of stream"
+12:46:32 [main] DEBUG o.a.h.i.c.DefaultManagedHttpClientConnection - http-outgoing-0: Close connection
+12:46:32 [main] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection leased: [id: 1][route: {}->http://hangzhou-test.fpi-inc.site:80][total available: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+12:46:32 [main] DEBUG o.a.h.i.execchain.MainClientExec - Opening connection {}->http://hangzhou-test.fpi-inc.site:80
+12:46:32 [main] DEBUG o.a.h.i.c.DefaultHttpClientConnectionOperator - Connecting to hangzhou-test.fpi-inc.site/118.178.150.178:80
+12:46:32 [main] DEBUG o.a.h.i.c.DefaultHttpClientConnectionOperator - Connection established 10.191.20.184:6655<->118.178.150.178:80
+12:46:32 [main] DEBUG o.a.h.i.c.DefaultManagedHttpClientConnection - http-outgoing-1: set socket timeout to 10000
+12:46:32 [main] DEBUG o.a.h.i.execchain.MainClientExec - Executing request POST /bmp-device-manage-server/api/v1/device/add-device HTTP/1.1
+12:46:32 [main] DEBUG o.a.h.i.execchain.MainClientExec - Target auth state: UNCHALLENGED
+12:46:32 [main] DEBUG o.a.h.i.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+12:46:32 [main] DEBUG org.apache.http.headers - http-outgoing-1 >> POST /bmp-device-manage-server/api/v1/device/add-device HTTP/1.1
+12:46:32 [main] DEBUG org.apache.http.headers - http-outgoing-1 >> Content-Length: 748
+12:46:32 [main] DEBUG org.apache.http.headers - http-outgoing-1 >> Content-Type: application/json
+12:46:32 [main] DEBUG org.apache.http.headers - http-outgoing-1 >> Host: hangzhou-test.fpi-inc.site
+12:46:32 [main] DEBUG org.apache.http.headers - http-outgoing-1 >> Connection: Keep-Alive
+12:46:32 [main] DEBUG org.apache.http.headers - http-outgoing-1 >> User-Agent: Apache-HttpClient/4.5.12 (Java/12)
+12:46:32 [main] DEBUG org.apache.http.headers - http-outgoing-1 >> Accept-Encoding: gzip,deflate
+12:46:32 [main] DEBUG org.apache.http.wire - http-outgoing-1 >> "POST /bmp-device-manage-server/api/v1/device/add-device HTTP/1.1[\r][\n]"
+12:46:32 [main] DEBUG org.apache.http.wire - http-outgoing-1 >> "Content-Length: 748[\r][\n]"
+12:46:32 [main] DEBUG org.apache.http.wire - http-outgoing-1 >> "Content-Type: application/json[\r][\n]"
+12:46:32 [main] DEBUG org.apache.http.wire - http-outgoing-1 >> "Host: hangzhou-test.fpi-inc.site[\r][\n]"
+12:46:32 [main] DEBUG org.apache.http.wire - http-outgoing-1 >> "Connection: Keep-Alive[\r][\n]"
+12:46:32 [main] DEBUG org.apache.http.wire - http-outgoing-1 >> "User-Agent: Apache-HttpClient/4.5.12 (Java/12)[\r][\n]"
+12:46:32 [main] DEBUG org.apache.http.wire - http-outgoing-1 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+12:46:32 [main] DEBUG org.apache.http.wire - http-outgoing-1 >> "[\r][\n]"
+12:46:32 [main] DEBUG org.apache.http.wire - http-outgoing-1 >> "{"basicAttrVoMap":{"channelNumber":{"basicAttrValue":"1,2"},"acquisitionCycle":{"basicAttrValue":"15"},"description":{"basicAttrValue":"[0xe8][0x81][0x9a][0xe5][0x85][0x89]AQMS350 O3[0xe5][0x88][0x86][0xe6][0x9e][0x90][0xe4][0xbb][0xaa]([0xe8][0xbd][0xae][0xe8][0xaf][0xa2][0xe9][0x87][0x87][0xe6][0x95][0xb0][0xe6][0x8d][0xae])[0xef][0xbc][0x9b][0xe8][0xaf][0xa5][0xe8][0xae][0xbe][0xe5][0xa4][0x87][0xe4][0xb8][0xbb][0xe8][0xa6][0x81][0xe7][0x94][0xa8][0xe6][0x9d][0xa5][0xe7][0x9b][0x91][0xe6][0xb5][0x8b][0xe5][0xa4][0xa7][0xe6][0xb0][0x94][0xe4][0xb8][0xad][0xe7][0x9a][0x84]O3[0xe6][0xb5][0x93][0xe5][0xba][0xa6][0xe3][0x80][0x82]"},"communicationType":{"basicAttrValue":"COM"},"communicationParameters":{"basicAttrValue":"[0xe6][0xb3][0xa2][0xe7][0x89][0xb9][0xe7][0x8e][0x87]57600;[0xe6][0x95][0xb0][0xe6][0x8d][0xae][0xe4][0xbd][0x8d]8;[0xe5][0x81][0x9c][0xe6][0xad][0xa2][0xe4][0xbd][0x8d]1;[0xe5][0x9c][0xb0][0xe5][0x9d][0x80]:16"},"category":{"basicAttrValue":"1-[0xe5][0xb8][0xb8][0xe8][0xa7][0x84][0xe4][0xbb][0xaa][0xe5][0x99][0xa8]"},"deviceName":{"basicAttrValue":"[0xe8][0x81][0x9a][0xe5][0x85][0x89] AQMS350 O3[0xe5][0x88][0x86][0xe6][0x9e][0x90][0xe4][0xbb][0xaa]([0xe8][0xbd][0xae][0xe8][0xaf][0xa2][0xe9][0x87][0x87][0xe6][0x95][0xb0][0xe6][0x8d][0xae])"}},"deviceCommonNameAttrs":{"deviceCode":"FPI_AQMS350","deviceTypeName":"[0xe5][0xa4][0xa7][0xe6][0xb0][0x94]","manufacturerName":"[0xe5][0x85][0xb6][0xe4][0xbb][0x96]"},"extendAttrVoMap":{"factors":{"extendAttrValuesMapList":[{"factorCode":{"subAttrValue":"a05024"}},{"factorCode":{"subAttrValue":"a90023"}}]}}}"
+12:46:32 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "HTTP/1.1 200 [\r][\n]"
+12:46:32 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "Server: nginx/1.15.8[\r][\n]"
+12:46:32 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "Date: Tue, 13 Oct 2020 12:46:32 GMT[\r][\n]"
+12:46:32 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+12:46:32 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "Transfer-Encoding: chunked[\r][\n]"
+12:46:32 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "Connection: keep-alive[\r][\n]"
+12:46:32 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "Vary: Accept-Encoding[\r][\n]"
+12:46:32 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "Set-Cookie: rememberMe=deleteMe; Path=/bmp-device-manage-server; Max-Age=0; Expires=Mon, 12-Oct-2020 12:46:32 GMT[\r][\n]"
+12:46:32 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "Content-Encoding: gzip[\r][\n]"
+12:46:32 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "[\r][\n]"
+12:46:32 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "65[\r][\n]"
+12:46:32 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0xaa]V*J-,M-.[0xf1]LQ[0xb2][0xca]+[0xcd][0xc9][0xd1]Q*.MNN-.V[0xb2]JK[0xcc])N[0xd5]QJ[0xce]OIU[0xb2]RJI,I[0x8c][0xcf][0xcb]/[0x89]O[0xcb]/[0xcd]KQ[0xd2]Q[0xca][0x5]*JL[0x7]I=[0x9b][0xba][0xe1]Y[0xef][0xba]';z[0x9f][0xae][0x9d][0xf1]t[0xce][\n]"
+12:46:32 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "[0xa5]Z[0x0][0x0][0x0][0x0][0xff][0xff][\r][\n]"
+12:46:32 [main] DEBUG org.apache.http.headers - http-outgoing-1 << HTTP/1.1 200 
+12:46:32 [main] DEBUG org.apache.http.headers - http-outgoing-1 << Server: nginx/1.15.8
+12:46:32 [main] DEBUG org.apache.http.headers - http-outgoing-1 << Date: Tue, 13 Oct 2020 12:46:32 GMT
+12:46:32 [main] DEBUG org.apache.http.headers - http-outgoing-1 << Content-Type: application/json;charset=UTF-8
+12:46:32 [main] DEBUG org.apache.http.headers - http-outgoing-1 << Transfer-Encoding: chunked
+12:46:32 [main] DEBUG org.apache.http.headers - http-outgoing-1 << Connection: keep-alive
+12:46:32 [main] DEBUG org.apache.http.headers - http-outgoing-1 << Vary: Accept-Encoding
+12:46:32 [main] DEBUG org.apache.http.headers - http-outgoing-1 << Set-Cookie: rememberMe=deleteMe; Path=/bmp-device-manage-server; Max-Age=0; Expires=Mon, 12-Oct-2020 12:46:32 GMT
+12:46:32 [main] DEBUG org.apache.http.headers - http-outgoing-1 << Content-Encoding: gzip
+12:46:32 [main] DEBUG o.a.h.i.execchain.MainClientExec - Connection can be kept alive indefinitely
+12:46:32 [main] DEBUG o.a.h.c.p.ResponseProcessCookies - Cookie accepted [rememberMe="deleteMe", version:0, domain:hangzhou-test.fpi-inc.site, path:/bmp-device-manage-server, expiry:Mon Oct 12 20:46:32 CST 2020]
+12:46:32 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "a[\r][\n]"
+12:46:32 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "[0x3][0x0]s[0x16]H[0xfe]V[0x0][0x0][0x0][\r][\n]"
+12:46:32 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "0[\r][\n]"
+12:46:32 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "[\r][\n]"
+12:46:32 [main] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection [id: 1][route: {}->http://hangzhou-test.fpi-inc.site:80] can be kept alive indefinitely
+12:46:32 [main] DEBUG o.a.h.i.c.DefaultManagedHttpClientConnection - http-outgoing-1: set socket timeout to 0
+12:46:32 [main] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection released: [id: 1][route: {}->http://hangzhou-test.fpi-inc.site:80][total available: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+12:46:32 [main] DEBUG o.a.h.c.p.RequestAddCookies - CookieSpec selected: default
+12:46:32 [main] DEBUG o.a.h.c.p.RequestAuthCache - Auth cache not set in the context
+12:46:32 [main] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection request: [route: {}->http://hangzhou-test.fpi-inc.site:80][total available: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+12:46:32 [main] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection leased: [id: 1][route: {}->http://hangzhou-test.fpi-inc.site:80][total available: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+12:46:32 [main] DEBUG o.a.h.i.c.DefaultManagedHttpClientConnection - http-outgoing-1: set socket timeout to 0
+12:46:32 [main] DEBUG o.a.h.i.c.DefaultManagedHttpClientConnection - http-outgoing-1: set socket timeout to 10000
+12:46:32 [main] DEBUG o.a.h.i.execchain.MainClientExec - Executing request POST /bmp-device-manage-server/api/v1/device/add-device HTTP/1.1
+12:46:32 [main] DEBUG o.a.h.i.execchain.MainClientExec - Target auth state: UNCHALLENGED
+12:46:32 [main] DEBUG o.a.h.i.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+12:46:32 [main] DEBUG org.apache.http.headers - http-outgoing-1 >> POST /bmp-device-manage-server/api/v1/device/add-device HTTP/1.1
+12:46:32 [main] DEBUG org.apache.http.headers - http-outgoing-1 >> Content-Length: 750
+12:46:32 [main] DEBUG org.apache.http.headers - http-outgoing-1 >> Content-Type: application/json
+12:46:32 [main] DEBUG org.apache.http.headers - http-outgoing-1 >> Host: hangzhou-test.fpi-inc.site
+12:46:32 [main] DEBUG org.apache.http.headers - http-outgoing-1 >> Connection: Keep-Alive
+12:46:32 [main] DEBUG org.apache.http.headers - http-outgoing-1 >> User-Agent: Apache-HttpClient/4.5.12 (Java/12)
+12:46:32 [main] DEBUG org.apache.http.headers - http-outgoing-1 >> Accept-Encoding: gzip,deflate
+12:46:32 [main] DEBUG org.apache.http.wire - http-outgoing-1 >> "POST /bmp-device-manage-server/api/v1/device/add-device HTTP/1.1[\r][\n]"
+12:46:32 [main] DEBUG org.apache.http.wire - http-outgoing-1 >> "Content-Length: 750[\r][\n]"
+12:46:32 [main] DEBUG org.apache.http.wire - http-outgoing-1 >> "Content-Type: application/json[\r][\n]"
+12:46:32 [main] DEBUG org.apache.http.wire - http-outgoing-1 >> "Host: hangzhou-test.fpi-inc.site[\r][\n]"
+12:46:32 [main] DEBUG org.apache.http.wire - http-outgoing-1 >> "Connection: Keep-Alive[\r][\n]"
+12:46:32 [main] DEBUG org.apache.http.wire - http-outgoing-1 >> "User-Agent: Apache-HttpClient/4.5.12 (Java/12)[\r][\n]"
+12:46:32 [main] DEBUG org.apache.http.wire - http-outgoing-1 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+12:46:32 [main] DEBUG org.apache.http.wire - http-outgoing-1 >> "[\r][\n]"
+12:46:32 [main] DEBUG org.apache.http.wire - http-outgoing-1 >> "{"basicAttrVoMap":{"channelNumber":{"basicAttrValue":"1,2"},"acquisitionCycle":{"basicAttrValue":"15"},"description":{"basicAttrValue":"[0xe8][0x81][0x9a][0xe5][0x85][0x89]AQMS400 CO[0xe5][0x88][0x86][0xe6][0x9e][0x90][0xe4][0xbb][0xaa]([0xe8][0xbd][0xae][0xe8][0xaf][0xa2][0xe9][0x87][0x87][0xe6][0x95][0xb0][0xe6][0x8d][0xae])[0xef][0xbc][0x9b][0xe8][0xaf][0xa5][0xe8][0xae][0xbe][0xe5][0xa4][0x87][0xe4][0xb8][0xbb][0xe8][0xa6][0x81][0xe7][0x94][0xa8][0xe6][0x9d][0xa5][0xe7][0x9b][0x91][0xe6][0xb5][0x8b][0xe5][0xa4][0xa7][0xe6][0xb0][0x94][0xe4][0xb8][0xad][0xe7][0x9a][0x84]CO[0xe6][0xb5][0x93][0xe5][0xba][0xa6][0xe3][0x80][0x82]"},"communicationType":{"basicAttrValue":"Other"},"communicationParameters":{"basicAttrValue":"[0xe6][0xb3][0xa2][0xe7][0x89][0xb9][0xe7][0x8e][0x87]57600;[0xe6][0x95][0xb0][0xe6][0x8d][0xae][0xe4][0xbd][0x8d]8;[0xe5][0x81][0x9c][0xe6][0xad][0xa2][0xe4][0xbd][0x8d]1;[0xe5][0x9c][0xb0][0xe5][0x9d][0x80]:16"},"category":{"basicAttrValue":"1-[0xe5][0xb8][0xb8][0xe8][0xa7][0x84][0xe4][0xbb][0xaa][0xe5][0x99][0xa8]"},"deviceName":{"basicAttrValue":"[0xe8][0x81][0x9a][0xe5][0x85][0x89] AQMS400 CO[0xe5][0x88][0x86][0xe6][0x9e][0x90][0xe4][0xbb][0xaa]([0xe8][0xbd][0xae][0xe8][0xaf][0xa2][0xe9][0x87][0x87][0xe6][0x95][0xb0][0xe6][0x8d][0xae])"}},"deviceCommonNameAttrs":{"deviceCode":"FPI_AQMS400","deviceTypeName":"[0xe5][0xa4][0xa7][0xe6][0xb0][0x94]","manufacturerName":"[0xe5][0x85][0xb6][0xe4][0xbb][0x96]"},"extendAttrVoMap":{"factors":{"extendAttrValuesMapList":[{"factorCode":{"subAttrValue":"a21005"}},{"factorCode":{"subAttrValue":"a90018"}}]}}}"
+12:46:32 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "HTTP/1.1 200 [\r][\n]"
+12:46:32 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "Server: nginx/1.15.8[\r][\n]"
+12:46:32 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "Date: Tue, 13 Oct 2020 12:46:32 GMT[\r][\n]"
+12:46:32 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+12:46:32 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "Transfer-Encoding: chunked[\r][\n]"
+12:46:32 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "Connection: keep-alive[\r][\n]"
+12:46:32 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "Vary: Accept-Encoding[\r][\n]"
+12:46:32 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "Set-Cookie: rememberMe=deleteMe; Path=/bmp-device-manage-server; Max-Age=0; Expires=Mon, 12-Oct-2020 12:46:32 GMT[\r][\n]"
+12:46:32 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "Content-Encoding: gzip[\r][\n]"
+12:46:32 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "[\r][\n]"
+12:46:32 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "65[\r][\n]"
+12:46:32 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0xaa]V*J-,M-.[0xf1]LQ[0xb2][0xca]+[0xcd][0xc9][0xd1]Q*.MNN-.V[0xb2]JK[0xcc])N[0xd5]QJ[0xce]OIU[0xb2]RJI,I[0x8c][0xcf][0xcb]/[0x89]O[0xcb]/[0xcd]KQ[0xd2]Q[0xca][0x5]*JL[0x7]I=[0x9b][0xba][0xe1]Y[0xef][0xba]';z[0x9f][0xae][0x9d][0xf1]t[0xce][\n]"
+12:46:32 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "[0xa5]Z[0x0][0x0][0x0][0x0][0xff][0xff][\r][\n]"
+12:46:32 [main] DEBUG org.apache.http.headers - http-outgoing-1 << HTTP/1.1 200 
+12:46:32 [main] DEBUG org.apache.http.headers - http-outgoing-1 << Server: nginx/1.15.8
+12:46:32 [main] DEBUG org.apache.http.headers - http-outgoing-1 << Date: Tue, 13 Oct 2020 12:46:32 GMT
+12:46:32 [main] DEBUG org.apache.http.headers - http-outgoing-1 << Content-Type: application/json;charset=UTF-8
+12:46:32 [main] DEBUG org.apache.http.headers - http-outgoing-1 << Transfer-Encoding: chunked
+12:46:32 [main] DEBUG org.apache.http.headers - http-outgoing-1 << Connection: keep-alive
+12:46:32 [main] DEBUG org.apache.http.headers - http-outgoing-1 << Vary: Accept-Encoding
+12:46:32 [main] DEBUG org.apache.http.headers - http-outgoing-1 << Set-Cookie: rememberMe=deleteMe; Path=/bmp-device-manage-server; Max-Age=0; Expires=Mon, 12-Oct-2020 12:46:32 GMT
+12:46:32 [main] DEBUG org.apache.http.headers - http-outgoing-1 << Content-Encoding: gzip
+12:46:32 [main] DEBUG o.a.h.i.execchain.MainClientExec - Connection can be kept alive indefinitely
+12:46:32 [main] DEBUG o.a.h.c.p.ResponseProcessCookies - Cookie accepted [rememberMe="deleteMe", version:0, domain:hangzhou-test.fpi-inc.site, path:/bmp-device-manage-server, expiry:Mon Oct 12 20:46:32 CST 2020]
+12:46:32 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "a[\r][\n]"
+12:46:32 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "[0x3][0x0]s[0x16]H[0xfe]V[0x0][0x0][0x0][\r][\n]"
+12:46:32 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "0[\r][\n]"
+12:46:32 [main] DEBUG org.apache.http.wire - http-outgoing-1 << "[\r][\n]"
+12:46:32 [main] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection [id: 1][route: {}->http://hangzhou-test.fpi-inc.site:80] can be kept alive indefinitely
+12:46:32 [main] DEBUG o.a.h.i.c.DefaultManagedHttpClientConnection - http-outgoing-1: set socket timeout to 0
+12:46:32 [main] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection released: [id: 1][route: {}->http://hangzhou-test.fpi-inc.site:80][total available: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+12:46:32 [main] DEBUG o.a.h.c.p.RequestAddCookies - CookieSpec selected: default
+12:46:32 [main] DEBUG o.a.h.c.p.RequestAuthCache - Auth cache not set in the context
+12:46:32 [main] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection request: [route: {}->http://hangzhou-test.fpi-inc.site:80][total available: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+12:46:32 [main] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection leased: [id: 1][route: {}->http://hangzhou-test.fpi-inc.site:80][total available: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+12:46:32 [main] DEBUG o.a.h.i.c.DefaultManagedHttpClientConnection - http-outgoing-1: set socket timeout to 0
+12:46:32 [main] DEBUG o.a.h.i.c.DefaultManagedHttpClientConnection - http-outgoing-1: set socket timeout to 10000
+12:46:32 [main] DEBUG o.a.h.i.execchain.MainClientExec - Executing request POST /bmp-device-manage-server/api/v1/device/add-device HTTP/1.1
+12:46:32 [main] DEBUG o.a.h.i.execchain.MainClientExec - Target auth state: UNCHALLENGED
+12:46:32 [main] DEBUG o.a.h.i.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+12:46:32 [main] DEBUG org.apache.http.headers - http-outgoing-1 >> POST /bmp-device-manage-server/api/v1/device/add-device HTTP/1.1
+12:46:32 [main] DEBUG org.apache.http.headers - http-outgoing-1 >> Content-Length: 753
+12:46:32 [main] DEBUG org.apache.http.headers - http-outgoing-1 >> Content-Type: application/json
+12:46:32 [main] DEBUG org.apache.http.headers - http-outgoing-1 >> Host: hangzhou-test.fpi-inc.site
+12:46:32 [main] DEBUG org.apache.http.headers - http-outgoing-1 >> Connection: Keep-Alive
+12:46:32 [main] DEBUG org.apache.http.headers - http-outgoing-1 >> User-Agent: Apache-HttpClient/4.5.12 (Java/12)
+12:46:32 [main] DEBUG org.apache.http.headers - http-outgoing-1 >> Accept-Encoding: gzip,deflate
+12:46:32 [main] DEBUG org.apache.http.wire - http-outgoing-1 >> "POST /bmp-device-manage-server/api/v1/device/add-device HTTP/1.1[\r][\n]"
+12:46:32 [main] DEBUG org.apache.http.wire - http-outgoing-1 >> "Content-Length: 753[\r][\n]"
+12:46:32 [main] DEBUG org.apache.http.wire - http-outgoing-1 >> "Content-Type: application/json[\r][\n]"
+12:46:32 [main] DEBUG org.apache.http.wire - http-outgoing-1 >> "Host: hangzhou-test.fpi-inc.site[\r][\n]"
+12:46:32 [main] DEBUG org.apache.http.wire - http-outgoing-1 >> "Connection: Keep-Alive[\r][\n]"
+12:46:32 [main] DEBUG org.apache.http.wire - http-outgoing-1 >> "User-Agent: Apache-HttpClient/4.5.12 (Java/12)[\r][\n]"
+12:46:32 [main] DEBUG org.apache.http.wire - http-outgoing-1 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+12:46:32 [main] DEBUG org.apache.http.wire - http-outgoing-1 >> "[\r][\n]"
+12:46:32 [main] DEBUG org.apache.http.wire - http-outgoing-1 >> "{"basicAttrVoMap":{"channelNumber":{"basicAttrValue":"1,2"},"acquisitionCycle":{"basicAttrValue":"15"},"description":{"basicAttrValue":"[0xe8][0x81][0x9a][0xe5][0x85][0x89]AQMS500 SO2[0xe5][0x88][0x86][0xe6][0x9e][0x90][0xe4][0xbb][0xaa]([0xe8][0xbd][0xae][0xe8][0xaf][0xa2][0xe9][0x87][0x87][0xe6][0x95][0xb0][0xe6][0x8d][0xae])[0xef][0xbc][0x9b][0xe8][0xaf][0xa5][0xe8][0xae][0xbe][0xe5][0xa4][0x87][0xe4][0xb8][0xbb][0xe8][0xa6][0x81][0xe7][0x94][0xa8][0xe6][0x9d][0xa5][0xe7][0x9b][0x91][0xe6][0xb5][0x8b][0xe5][0xa4][0xa7][0xe6][0xb0][0x94][0xe4][0xb8][0xad][0xe7][0x9a][0x84]SO2[0xe6][0xb5][0x93][0xe5][0xba][0xa6][0xe3][0x80][0x82]"},"communicationType":{"basicAttrValue":"Other"},"communicationParameters":{"basicAttrValue":"[0xe6][0xb3][0xa2][0xe7][0x89][0xb9][0xe7][0x8e][0x87]57600;[0xe6][0x95][0xb0][0xe6][0x8d][0xae][0xe4][0xbd][0x8d]8;[0xe5][0x81][0x9c][0xe6][0xad][0xa2][0xe4][0xbd][0x8d]1;[0xe5][0x9c][0xb0][0xe5][0x9d][0x80]:16"},"category":{"basicAttrValue":"1-[0xe5][0xb8][0xb8][0xe8][0xa7][0x84][0xe4][0xbb][0xaa][0xe5][0x99][0xa8]"},"deviceName":{"basicAttrValue":"[0xe8][0x81][0x9a][0xe5][0x85][0x89] AQMS500 SO2[0xe5][0x88][0x86][0xe6][0x9e][0x90][0xe4][0xbb][0xaa]([0xe8][0xbd][0xae][0xe8][0xaf][0xa2][0xe9][0x87][0x87][0xe6][0x95][0xb0][0xe6][0x8d][0xae])"}},"deviceCommonNameAttrs":{"deviceCode":"FPI_AQMS500","deviceTypeName":"[0xe5][0xa4][0xa7][0xe6][0xb0][0x94]","manufacturerName":"[0xe5][0x85][0xb6][0xe4][0xbb][0x96]"},"extendAttrVoMap":{"factors":{"extendAttrValuesMapList":[{"factorCode":{"subAttrValue":"a21026"}},{"factorCode":{"subAttrValue":"a90017"}}]}}}"
+12:46:38 [main] DEBUG o.a.h.c.p.RequestAddCookies - CookieSpec selected: default
+12:46:38 [main] DEBUG o.a.h.c.p.RequestAuthCache - Auth cache not set in the context
+12:46:38 [main] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection request: [route: {}->http://hangzhou-test.fpi-inc.site:80][total available: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+12:46:38 [main] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection leased: [id: 0][route: {}->http://hangzhou-test.fpi-inc.site:80][total available: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+12:46:38 [main] DEBUG o.a.h.i.execchain.MainClientExec - Opening connection {}->http://hangzhou-test.fpi-inc.site:80
+12:46:38 [main] DEBUG o.a.h.i.c.DefaultHttpClientConnectionOperator - Connecting to hangzhou-test.fpi-inc.site/118.178.150.178:80
+12:46:38 [main] DEBUG o.a.h.i.c.DefaultHttpClientConnectionOperator - Connection established 10.191.20.184:6664<->118.178.150.178:80
+12:46:38 [main] DEBUG o.a.h.i.c.DefaultManagedHttpClientConnection - http-outgoing-0: set socket timeout to 10000
+12:46:38 [main] DEBUG o.a.h.i.execchain.MainClientExec - Executing request POST /bmp-device-manage-server/api/v1/device/add-device HTTP/1.1
+12:46:38 [main] DEBUG o.a.h.i.execchain.MainClientExec - Target auth state: UNCHALLENGED
+12:46:38 [main] DEBUG o.a.h.i.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+12:46:38 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> POST /bmp-device-manage-server/api/v1/device/add-device HTTP/1.1
+12:46:38 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Content-Length: 980
+12:46:38 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Content-Type: application/json
+12:46:38 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Host: hangzhou-test.fpi-inc.site
+12:46:38 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Connection: Keep-Alive
+12:46:38 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.12 (Java/12)
+12:46:38 [main] DEBUG org.apache.http.headers - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+12:46:38 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "POST /bmp-device-manage-server/api/v1/device/add-device HTTP/1.1[\r][\n]"
+12:46:38 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Content-Length: 980[\r][\n]"
+12:46:38 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Content-Type: application/json[\r][\n]"
+12:46:38 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Host: hangzhou-test.fpi-inc.site[\r][\n]"
+12:46:38 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+12:46:38 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.12 (Java/12)[\r][\n]"
+12:46:38 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+12:46:38 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "[\r][\n]"
+12:46:38 [main] DEBUG org.apache.http.wire - http-outgoing-0 >> "{"basicAttrVoMap":{"channelNumber":{"basicAttrValue":"1,2,3,4,5,6,7,8"},"acquisitionCycle":{"basicAttrValue":"15"},"description":{"basicAttrValue":"[0xe8][0x81][0x9a][0xe5][0x85][0x89][0xe9][0x9b][0x86][0xe7][0xba][0xbf][0xe5][0x99][0xa8]SCM-100([0xe4][0xb8][0xbb][0xe5][0x8a][0xa8][0xe4][0xb8][0x8a][0xe6][0x8a][0xa5][0xe6][0x95][0xb0][0xe6][0x8d][0xae])[0xef][0xbc][0x9b][0xe8][0xaf][0xa5][0xe8][0xae][0xbe][0xe5][0xa4][0x87][0xe5][0x85][0xb7][0xe5][0xa4][0x87]8[0xe8][0xb7][0xaf][0xe6][0xa8][0xa1][0xe6][0x8b][0x9f][0xe9][0x87][0x8f][0xe8][0xbe][0x93][0xe5][0x85][0xa5][0xe9][0x80][0x9a][0xe9][0x81][0x93][0xe5][0x92][0x8c]8[0xe8][0xb7][0xaf][0xe5][0xbc][0x80][0xe5][0x85][0xb3][0xe9][0x87][0x8f][0xe8][0xbe][0x93][0xe5][0x85][0xa5][0xe9][0x80][0x9a][0xe9][0x81][0x93]"},"communicationType":{"basicAttrValue":"Other"},"communicationParameters":{"basicAttrValue":"123"},"category":{"basicAttrValue":"5-IO[0xe4][0xbb][0xaa][0xe5][0x99][0xa8]"},"deviceName":{"basicAttrValue":"[0xe8][0x81][0x9a][0xe5][0x85][0x89] SCM-100 [0xe9][0x9b][0x86][0xe7][0xba][0xbf][0xe5][0x99][0xa8]([0xe4][0xb8][0xbb][0xe5][0x8a][0xa8][0xe4][0xb8][0x8a][0xe6][0x8a][0xa5][0xe6][0x95][0xb0][0xe6][0x8d][0xae])"}},"deviceCommonNameAttrs":{"deviceCode":"FPI_NEW_HUB","deviceTypeName":"[0xe5][0xa4][0xa7][0xe6][0xb0][0x94]","manufacturerName":"[0xe5][0x85][0xb6][0xe4][0xbb][0x96]"},"extendAttrVoMap":{"factors":{"extendAttrValuesMapList":[{"factorCode":{"subAttrValue":"a99754"}},{"factorCode":{"subAttrValue":"a99755"}},{"factorCode":{"subAttrValue":"a01001"}},{"factorCode":{"subAttrValue":"a01002"}},{"factorCode":{"subAttrValue":"a01006"}},{"factorCode":{"subAttrValue":"a01007"}},{"factorCode":{"subAttrValue":"a01008"}},{"factorCode":{"subAttrValue":"a06001"}}]}}}"
+12:46:38 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "HTTP/1.1 200 [\r][\n]"
+12:46:38 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Server: nginx/1.15.8[\r][\n]"
+12:46:38 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Date: Tue, 13 Oct 2020 12:46:38 GMT[\r][\n]"
+12:46:38 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+12:46:38 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+12:46:38 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+12:46:38 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Vary: Accept-Encoding[\r][\n]"
+12:46:38 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Set-Cookie: rememberMe=deleteMe; Path=/bmp-device-manage-server; Max-Age=0; Expires=Mon, 12-Oct-2020 12:46:38 GMT[\r][\n]"
+12:46:38 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
+12:46:38 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
+12:46:38 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "65[\r][\n]"
+12:46:38 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0xaa]V*J-,M-.[0xf1]LQ[0xb2][0xca]+[0xcd][0xc9][0xd1]Q*.MNN-.V[0xb2]JK[0xcc])N[0xd5]QJ[0xce]OIU[0xb2]RJI,I[0x8c][0xcf][0xcb]/[0x89]O[0xcb]/[0xcd]KQ[0xd2]Q[0xca][0x5]*JL[0x7]I=[0x9b][0xba][0xe1]Y[0xef][0xba]';z[0x9f][0xae][0x9d][0xf1]t[0xce][\n]"
+12:46:38 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "[0xa5]Z[0x0][0x0][0x0][0x0][0xff][0xff][\r][\n]"
+12:46:38 [main] DEBUG org.apache.http.headers - http-outgoing-0 << HTTP/1.1 200 
+12:46:38 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Server: nginx/1.15.8
+12:46:38 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Date: Tue, 13 Oct 2020 12:46:38 GMT
+12:46:38 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Content-Type: application/json;charset=UTF-8
+12:46:38 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Transfer-Encoding: chunked
+12:46:38 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Connection: keep-alive
+12:46:38 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Vary: Accept-Encoding
+12:46:38 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Set-Cookie: rememberMe=deleteMe; Path=/bmp-device-manage-server; Max-Age=0; Expires=Mon, 12-Oct-2020 12:46:38 GMT
+12:46:38 [main] DEBUG org.apache.http.headers - http-outgoing-0 << Content-Encoding: gzip
+12:46:38 [main] DEBUG o.a.h.i.execchain.MainClientExec - Connection can be kept alive indefinitely
+12:46:38 [main] DEBUG o.a.h.c.p.ResponseProcessCookies - Cookie accepted [rememberMe="deleteMe", version:0, domain:hangzhou-test.fpi-inc.site, path:/bmp-device-manage-server, expiry:Mon Oct 12 20:46:38 CST 2020]
+12:46:38 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "a[\r][\n]"
+12:46:38 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "[0x3][0x0]s[0x16]H[0xfe]V[0x0][0x0][0x0][\r][\n]"
+12:46:38 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "0[\r][\n]"
+12:46:38 [main] DEBUG org.apache.http.wire - http-outgoing-0 << "[\r][\n]"
+12:46:38 [main] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection [id: 0][route: {}->http://hangzhou-test.fpi-inc.site:80] can be kept alive indefinitely
+12:46:38 [main] DEBUG o.a.h.i.c.DefaultManagedHttpClientConnection - http-outgoing-0: set socket timeout to 0
+12:46:38 [main] DEBUG o.a.h.i.c.PoolingHttpClientConnectionManager - Connection released: [id: 0][route: {}->http://hangzhou-test.fpi-inc.site:80][total available: 1; route allocated: 1 of 2; total allocated: 1 of 20]

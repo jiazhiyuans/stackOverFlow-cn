@@ -3,6 +3,7 @@ package com.ali.edu.stackoverflow.zdemo;
 import com.ali.edu.stackoverflow.entity.DeviceAddParam;
 import com.ali.edu.stackoverflow.utils.HttpUtils;
 import com.ali.edu.stackoverflow.utils.entity.FactorCategory;
+import com.alibaba.fastjson.JSONObject;
 import org.apache.poi.hssf.usermodel.*;
 import org.apache.poi.hssf.util.HSSFColor;
 import org.apache.poi.ss.usermodel.Font;
@@ -12,10 +13,7 @@ import org.apache.poi.ss.util.CellRangeAddress;
 import org.junit.jupiter.api.Test;
 
 import java.io.File;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
+import java.util.*;
 
 /**
  * @author rocky
@@ -68,10 +66,10 @@ public class Main {
         }
     }
 
-
-
     @Test
     public void testaddManufacture(){
+        List<String> list = new ArrayList<>();
+        int count = 0;
         HttpUtils  httpUtils = new HttpUtils();
         HashSet<String> hashSet =
                 ExcelUtils.poiReadExcelReadManufacture("C:\\Users\\rocky\\Desktop\\产品导入数据整理\\制造商整理.xlsx");
@@ -79,10 +77,15 @@ public class Main {
             Manufacturer manufacturer = new Manufacturer();
             manufacturer.setManufacturerCode(ExcelUtils.generateShortUuid());
             manufacturer.setManufacturerName(s);
-            String s1 = httpUtils.postAddManufacture("http://hangzhou-test.fpi-inc.site/bmp-device-manage-server/api/v1/manufacturer/add", manufacturer);
-            System.out.println(s1);
+            Boolean res = httpUtils.postAddManufacture("http://bmp-yanshi.fpi-inc.site/bmp-device-manage-server/api/v1/manufacturer/add", manufacturer);
+            if(res == true){
+                count ++;
+            }else {
+                list.add(s);
+            }
         }
-
+        System.out.println(list);
+        System.out.println(count);
     }
 
     @Test
@@ -97,12 +100,51 @@ public class Main {
         for (FactorIndex factorIndex : factorWIndexList) {
             map.put(factorIndex.getName(),factorIndex.getCode());
         }
-        List<DeviceAddParam> DeviceAddParamList = ExcelUtils.poiReadExcelAndReturnDevice("C:\\Users\\rocky\\Desktop\\产品导入数据整理\\大气\\大气设备类型整理.xlsx",map);
+//        List<DeviceAddParam> DeviceAddParamList = ExcelUtils.poiReadExcelAndReturnDevice("C:\\Users\\rocky\\Desktop\\产品导入数据整理\\大气\\大气设备类型整理.xlsx",map);
+//        for (DeviceAddParam deviceAddParam : DeviceAddParamList) {
+//            httpUtils.postAddDevice("http://hangzhou-test.fpi-inc.site/bmp-device-manage-server/api/v1/device/add-device",deviceAddParam);
+//        }
+    }
+
+    @Test
+    public void importData(){
+        List<String> list = new ArrayList<>();
+        int count = 0;
+        HttpUtils  httpUtils = new HttpUtils();
+        HashSet<String> hashSet =
+                ExcelUtils.poiReadExcelReadManufacture("C:\\Users\\rocky\\Desktop\\产品导入数据整理\\制造商整理.xlsx");
+
+        Map<String, String> stringStringMap = ExcelUtils.poiReadExcelReadTransform("C:\\Users\\rocky\\Desktop\\大气设备因子\\因子.xlsx");
+        List<DeviceAddParam> DeviceAddParamList = ExcelUtils.poiReadExcelAndReturnDevice("C:\\Users\\rocky\\Desktop\\大气设备因子\\设备1.xlsx",stringStringMap,hashSet);
         for (DeviceAddParam deviceAddParam : DeviceAddParamList) {
-            httpUtils.postAddDevice("http://hangzhou-test.fpi-inc.site/bmp-device-manage-server/api/v1/device/add-device",deviceAddParam);
+            String s = JSONObject.toJSONString(deviceAddParam);
+            boolean res = httpUtils.postAddDevice("http://bmp-yanshi.fpi-inc.site/bmp-device-manage-server/api/v1/device/add-device",deviceAddParam);
+            if(res == true){
+                count++;
+            }else{
+                list.add(deviceAddParam.getDeviceCommonNameAttrs().getDeviceCode());
+            }
         }
+        System.out.println(list);
+    }
 
-
-
+    @Test
+    public void importData2(){
+        int count = 0;
+        List<String> list = new ArrayList();
+        HttpUtils  httpUtils = new HttpUtils();
+        List<DeviceAddParam> DeviceAddParamList = ExcelUtils.poiReadExcelAndReturnWaterDevice
+                ("C:\\Users\\rocky\\Desktop\\产品导入数据整理\\水质监测设备2.xlsx");
+        for (DeviceAddParam deviceAddParam : DeviceAddParamList) {
+            String s = JSONObject.toJSONString(deviceAddParam);
+            boolean res = httpUtils.postAddDevice("http://hangzhou-test.fpi-inc.site/bmp-device-manage-server/api/v1/device/add-device",deviceAddParam);
+            if(res == true){
+                count++;
+            }else{
+                list.add(deviceAddParam.getDeviceCommonNameAttrs().getDeviceCode());
+            }
+        }
+        System.out.println(list);
+        System.out.println(count);
     }
 }

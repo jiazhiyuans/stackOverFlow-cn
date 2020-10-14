@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a9b65f1d-f74a-4c22-9566-8f5b71b612b4" name="Default Changelist" comment="" />
+    <list default="true" id="a9b65f1d-f74a-4c22-9566-8f5b71b612b4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/logFile.log" beforeDir="false" afterPath="$PROJECT_DIR$/logFile.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ali/edu/stackoverflow/utils/HttpUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ali/edu/stackoverflow/utils/HttpUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ali/edu/stackoverflow/zdemo/ExcelUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ali/edu/stackoverflow/zdemo/ExcelUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ali/edu/stackoverflow/zdemo/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ali/edu/stackoverflow/zdemo/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ali/edu/stackoverflow/utils/HttpUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ali/edu/stackoverflow/utils/HttpUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ali/edu/stackoverflow/zdemo/ExcelUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ali/edu/stackoverflow/zdemo/ExcelUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ali/edu/stackoverflow/zdemo/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ali/edu/stackoverflow/zdemo/Main.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +25,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -26,6 +37,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1hA36IkVdYWaBPJyCOm20Fb9J2i" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -69,7 +81,39 @@
       <recent name="E:\1学习\stackoverflow-cn\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.StackOverFlowMain">
+  <component name="RunManager" selected="JUnit.Main.importData2">
+    <configuration name="Main.importData" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="stackoverflow-cn" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ali.edu.stackoverflow.zdemo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ali.edu.stackoverflow.zdemo" />
+      <option name="MAIN_CLASS_NAME" value="com.ali.edu.stackoverflow.zdemo.Main" />
+      <option name="METHOD_NAME" value="importData" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main.importData2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="stackoverflow-cn" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ali.edu.stackoverflow.zdemo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ali.edu.stackoverflow.zdemo" />
+      <option name="MAIN_CLASS_NAME" value="com.ali.edu.stackoverflow.zdemo.Main" />
+      <option name="METHOD_NAME" value="importData2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main.insertFactorCategory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="stackoverflow-cn" />
       <extension name="coverage">
@@ -86,22 +130,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main.testExportData" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="stackoverflow-cn" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ali.edu.stackoverflow.zdemo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ali.edu.stackoverflow.zdemo" />
-      <option name="MAIN_CLASS_NAME" value="com.ali.edu.stackoverflow.zdemo.Main" />
-      <option name="METHOD_NAME" value="testExportData" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Main.testaddManufacture" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="stackoverflow-cn" />
       <extension name="coverage">
@@ -113,22 +141,6 @@
       <option name="PACKAGE_NAME" value="com.ali.edu.stackoverflow.zdemo" />
       <option name="MAIN_CLASS_NAME" value="com.ali.edu.stackoverflow.zdemo.Main" />
       <option name="METHOD_NAME" value="testaddManufacture" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestKafka.testKafka" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="stackoverflow-cn" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ali.edu.stackoverflow.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ali.edu.stackoverflow" />
-      <option name="MAIN_CLASS_NAME" value="com.ali.edu.stackoverflow.TestKafka" />
-      <option name="METHOD_NAME" value="testKafka" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -211,11 +223,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Main.importData2" />
+        <item itemvalue="JUnit.Main.importData" />
+        <item itemvalue="JUnit.Main.testaddManufacture" />
         <item itemvalue="Spring Boot.StackOverFlowMain" />
         <item itemvalue="JUnit.Main.insertFactorCategory" />
-        <item itemvalue="JUnit.Main.testaddManufacture" />
-        <item itemvalue="JUnit.Main.testExportData" />
-        <item itemvalue="JUnit.TestKafka.testKafka" />
       </list>
     </recent_temporary>
   </component>
@@ -261,6 +273,9 @@
       <workItem from="1601431091845" duration="3251000" />
       <workItem from="1601448268970" duration="1272000" />
       <workItem from="1602240598020" duration="1904000" />
+      <workItem from="1602311640998" duration="11830000" />
+      <workItem from="1602589872713" duration="9565000" />
+      <workItem from="1602666166191" duration="8541000" />
     </task>
     <servers />
   </component>
@@ -293,63 +308,63 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="158" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1601218328542" />
-    <state width="503" height="438" key="DebuggerActiveHint" timestamp="1601376506809">
+    <state width="1064" height="799" key="DebuggerActiveHint" timestamp="1602676078137">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="503" height="438" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1601376506809" />
+    <state width="1064" height="799" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1602676078137" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1601431126418">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824/-1600.-70.1600.860@0.0.1536.824" timestamp="1600352553371" />
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1601431126418" />
-    <state width="1492" height="436" key="GridCell.Tab.0.bottom" timestamp="1601459122617">
+    <state width="1492" height="207" key="GridCell.Tab.0.bottom" timestamp="1602677195277">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1556" height="241" key="GridCell.Tab.0.bottom/0.0.1536.824/-1600.-70.1600.860@-1600.-70.1600.860" timestamp="1599441094889" />
     <state width="1493" height="127" key="GridCell.Tab.0.bottom/0.0.1536.824/-1600.-70.1600.860@0.0.1536.824" timestamp="1600395943709" />
-    <state width="1492" height="436" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601459122617" />
-    <state width="1492" height="436" key="GridCell.Tab.0.center" timestamp="1601459122617">
+    <state width="1492" height="207" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1602677195277" />
+    <state width="1492" height="207" key="GridCell.Tab.0.center" timestamp="1602677195275">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1556" height="241" key="GridCell.Tab.0.center/0.0.1536.824/-1600.-70.1600.860@-1600.-70.1600.860" timestamp="1599441094889" />
     <state width="1493" height="127" key="GridCell.Tab.0.center/0.0.1536.824/-1600.-70.1600.860@0.0.1536.824" timestamp="1600395943709" />
-    <state width="1492" height="436" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1601459122617" />
-    <state width="1492" height="436" key="GridCell.Tab.0.left" timestamp="1601459122617">
+    <state width="1492" height="207" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1602677195275" />
+    <state width="1492" height="207" key="GridCell.Tab.0.left" timestamp="1602677195275">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1556" height="241" key="GridCell.Tab.0.left/0.0.1536.824/-1600.-70.1600.860@-1600.-70.1600.860" timestamp="1599441094889" />
     <state width="1493" height="127" key="GridCell.Tab.0.left/0.0.1536.824/-1600.-70.1600.860@0.0.1536.824" timestamp="1600395943709" />
-    <state width="1492" height="436" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1601459122617" />
-    <state width="1492" height="436" key="GridCell.Tab.0.right" timestamp="1601459122617">
+    <state width="1492" height="207" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1602677195275" />
+    <state width="1492" height="207" key="GridCell.Tab.0.right" timestamp="1602677195277">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1556" height="241" key="GridCell.Tab.0.right/0.0.1536.824/-1600.-70.1600.860@-1600.-70.1600.860" timestamp="1599441094889" />
     <state width="1493" height="127" key="GridCell.Tab.0.right/0.0.1536.824/-1600.-70.1600.860@0.0.1536.824" timestamp="1600395943709" />
-    <state width="1492" height="436" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1601459122617" />
-    <state width="1492" height="436" key="GridCell.Tab.1.bottom" timestamp="1601459122617">
+    <state width="1492" height="207" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1602677195277" />
+    <state width="1492" height="207" key="GridCell.Tab.1.bottom" timestamp="1602677198698">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1556" height="241" key="GridCell.Tab.1.bottom/0.0.1536.824/-1600.-70.1600.860@-1600.-70.1600.860" timestamp="1599441094890" />
     <state width="1493" height="127" key="GridCell.Tab.1.bottom/0.0.1536.824/-1600.-70.1600.860@0.0.1536.824" timestamp="1600395943709" />
-    <state width="1492" height="436" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601459122617" />
-    <state width="1492" height="436" key="GridCell.Tab.1.center" timestamp="1601459122617">
+    <state width="1492" height="207" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1602677198698" />
+    <state width="1492" height="207" key="GridCell.Tab.1.center" timestamp="1602677198697">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1556" height="241" key="GridCell.Tab.1.center/0.0.1536.824/-1600.-70.1600.860@-1600.-70.1600.860" timestamp="1599441094890" />
     <state width="1493" height="127" key="GridCell.Tab.1.center/0.0.1536.824/-1600.-70.1600.860@0.0.1536.824" timestamp="1600395943709" />
-    <state width="1492" height="436" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1601459122617" />
-    <state width="1492" height="436" key="GridCell.Tab.1.left" timestamp="1601459122617">
+    <state width="1492" height="207" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1602677198697" />
+    <state width="1492" height="207" key="GridCell.Tab.1.left" timestamp="1602677198697">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1556" height="241" key="GridCell.Tab.1.left/0.0.1536.824/-1600.-70.1600.860@-1600.-70.1600.860" timestamp="1599441094890" />
     <state width="1493" height="127" key="GridCell.Tab.1.left/0.0.1536.824/-1600.-70.1600.860@0.0.1536.824" timestamp="1600395943709" />
-    <state width="1492" height="436" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1601459122617" />
-    <state width="1492" height="436" key="GridCell.Tab.1.right" timestamp="1601459122617">
+    <state width="1492" height="207" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1602677198697" />
+    <state width="1492" height="207" key="GridCell.Tab.1.right" timestamp="1602677198698">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1556" height="241" key="GridCell.Tab.1.right/0.0.1536.824/-1600.-70.1600.860@-1600.-70.1600.860" timestamp="1599441094890" />
     <state width="1493" height="127" key="GridCell.Tab.1.right/0.0.1536.824/-1600.-70.1600.860@0.0.1536.824" timestamp="1600395943709" />
-    <state width="1492" height="436" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1601459122617" />
+    <state width="1492" height="207" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1602677198698" />
     <state width="1492" height="436" key="GridCell.Tab.2.bottom" timestamp="1601459122618">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -374,6 +389,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="270" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1600826839963" />
+    <state width="1085" height="419" key="XDebugger.FullValuePopup" timestamp="1602593264744">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1085" height="419" key="XDebugger.FullValuePopup/0.0.1536.824@0.0.1536.824" timestamp="1602593264744" />
     <state x="208" y="160" key="caller.chooser.dialog" timestamp="1600827352492">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -382,10 +401,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="467" y="115" width="602" height="594" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1601176685290" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1600926762150">
+    <state x="425" y="187" key="run.anything.popup" timestamp="1602673926753">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1600926762150" />
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1602673926753" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1601299931544">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -401,15 +420,20 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/ali/edu/stackoverflow/zdemo/Main.java</url>
-          <line>75</line>
-          <option name="timeStamp" value="8" />
+          <line>87</line>
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/ali/edu/stackoverflow/zdemo/ExcelUtils.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="12" />
+          <url>file://$PROJECT_DIR$/src/main/java/com/ali/edu/stackoverflow/utils/HttpUtils.java</url>
+          <line>100</line>
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo typeName="java.util.HashMap$Node" fieldName="value" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>
