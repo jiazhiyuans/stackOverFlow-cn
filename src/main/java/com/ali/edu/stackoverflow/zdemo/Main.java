@@ -137,7 +137,7 @@ public class Main {
                 ("C:\\Users\\rocky\\Desktop\\产品导入数据整理\\水质监测设备2.xlsx");
         for (DeviceAddParam deviceAddParam : DeviceAddParamList) {
             String s = JSONObject.toJSONString(deviceAddParam);
-            boolean res = httpUtils.postAddDevice("http://hangzhou-test.fpi-inc.site/bmp-device-manage-server/api/v1/device/add-device",deviceAddParam);
+            boolean res = httpUtils.postAddDevice("http://bmp-yanshi.fpi-inc.site/bmp-device-manage-server/api/v1/device/add-device",deviceAddParam);
             if(res == true){
                 count++;
             }else{
